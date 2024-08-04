@@ -1,6 +1,0 @@
-package Encapsulation;
-
-public class encap {
-
-    //PROCESS OF BINDING DATA AND METHODS TOGETHER IN SINGLE UNIT IS CALLED ENCAPSULATION
-}
