@@ -28,15 +28,61 @@ public class Hash_Map {
  environment, it has to be synchronized explicitly.
  • Initial capacity: 16 and Load Factor: .75
  ***********/
-    public void Hash_Map_Example()
+   public void Hash_Map_Example()
     {
+        HashMap<Integer,String> hm = new HashMap<Integer,String>();
+        hm.put(1,"Suriya");
+        hm.put(2,"Priya");
+        hm.put(3,"Abarna");
+        hm.put(4,"Abitha");
+        hm.put(5,"Divya");
+        System.out.println("Employee Map : " +hm);
 
+       //To make a copy of the existing
+        Map<Integer,String> duplicateMap = new HashMap<Integer,String>();
+        duplicateMap.putAll(hm);
+        System.out.println("Employee Map Duplicate: " +duplicateMap);
 
+        //clear to delete the map contents
+        duplicateMap.clear();
+        System.out.println("Employee Map Duplicate: " +duplicateMap);
+
+        //To check if  a Key is present or not in the Map
+        System.out.println("Does this map has Key 1" +hm.containsKey(1));
+
+        //To check if a Value is present or not
+        System.out.println("Does this map has value Abarna" +hm.containsValue("Abarna"));
+
+        //Clone the Map
+        System.out.println("Cloned Map " +hm.clone());
+
+        //Check if the Map is empty or  not
+        System.out.println("Cloned Map " +duplicateMap.isEmpty());
+
+        //Fetch the set of Keys in the Map (Note: Here its not list of Keys, its set of Keys.
+        //Because List will allow duplicate but Set Wont. Keys should be Unique
+        System.out.println("Key Set " +hm.keySet());
+
+        //Fetch a value
+        System.out.println(hm.get(1));
+
+        //Fetch all the Values
+        System.out.println("All Values" +hm.values());
+
+        //Entry set
+        System.out.println(hm.entrySet());
 
     }
 
-    public static void main (String[] arg)
-    {}
+    public static void main(String[] args)
+    {
+        Hash_Map hm = new Hash_Map();
+        hm.Hash_Map_Example();
+    }
+
+
+
+
 
 
 }

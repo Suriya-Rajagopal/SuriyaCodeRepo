@@ -12,4 +12,25 @@ package Collections_Programs_HashMapInterface;
    as it affects the natural sorting order
  */
 public class Tree_Map {
+
+ public static void main(String[] args) {
+
+
+        TreeMap<String, String> placesInTrichy=new TreeMap<String, String>();
+        //placesInTrichy.put(null, "Melaputhur");
+
+        placesInTrichy.put("Thiruverumbur", "Trichy");
+        placesInTrichy.put("SriRangam", "Trichy");
+        placesInTrichy.put("Palakkarai", "Trichy");
+        placesInTrichy.put("Kallukuzhi", "Trichy");
+        placesInTrichy.put("Trichy", "TVS Toll Gate");
+        placesInTrichy.put("Trichy", "Melaputhur");
+      //  placesInTrichy.put(null, "xyz");
+
+        System.out.println(placesInTrichy);
+
+
+}
+
+
 }

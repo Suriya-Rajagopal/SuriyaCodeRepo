@@ -18,5 +18,29 @@ package Collections_Programs_HashMapInterface;
  *******/
 public class Linked_HashMap {
 
+ public void Linked_HashMapExample() {
+        LinkedHashMap<String, String> heros = new LinkedHashMap<String, String>();
+        heros.put("Iron Man", "Tony Stark");
+        heros.put("Bat Man", "Bruce Wyne");
+        heros.put("Super Man", "Clark");
+
+        System.out.println(heros);
+
+        HashMap<String, String> hasMapHeros = new HashMap<String, String>();
+        hasMapHeros.put("Iron Man", "Tony Stark");
+        hasMapHeros.put("Bat Man", "Bruce Wyne");
+        hasMapHeros.put("Super Man", "Clark");
+
+        System.out.println(hasMapHeros);
+
+    }
+
+
+    public static void main(String[] args) {
+        Linked_HashMap Lhm = new Linked_HashMap();
+        Lhm.Linked_HashMapExample();
+
+
+    }
 
 }
